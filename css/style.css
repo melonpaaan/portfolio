@@ -1,0 +1,181 @@
+@charset   "UTF-8";
+ 
+* {
+  margin: 0;
+  padding: 0 ;
+  list-style: none;
+  text-decoration: none;
+}
+ 
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+ 
+header {
+  position: relative;
+  background: #ee827c;
+  color: #FFF;
+  padding: 20px;
+}
+.navButton {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.navButton .material-symbols-rounded {
+  color: #FFF;
+  font-size: 2rem;
+}
+
+nav {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(64,64,64,.7);
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+.menu li {
+  height: 3rem;
+  border-bottom: solid 1px #AAA;
+}
+
+.menu a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  color: #FFF;
+}
+
+.menu a:hover {
+  background-color: #222;
+}
+
+ 
+section {
+  background: #EEE;
+  color: #727171;
+  flex: 3;
+  padding: 20px;
+}
+ 
+ 
+footer   {
+  background: #afafb0;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+img   {
+  width: 100%;
+  height: auto;
+}
+.about {
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  width:  300px;       /* ※縦横を同値に */
+  height: 300px;       /* ※縦横を同値に */
+  margin-right: 20px;
+}
+
+article{
+  padding-top: 20px;
+}
+
+.name{
+  color: #ee827c;
+}
+
+.favorite{
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.link{
+  text-align: center;
+}
+.contact {
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  width:  300px;       /* ※縦横を同値に */
+  height: 300px;       /* ※縦横を同値に */
+}
+
+
+@media all and (min-width: 600px) {
+
+    .main-menu ul {
+      display: flex;
+    }
+  
+    .main-menu ul li {
+      text-align: left;
+    }
+  
+    main {
+      display: flex;
+    }
+  
+    .sub-menu ul li {
+      text-align: left;
+    }
+    #imgSet {
+      display: flex;
+    }
+  
+    #imgSet li {
+      margin-right: 10px;
+    }
+  
+    #imgSet li:last-of-type {
+      margin-right: 0;
+    }
+    .box{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+
+  
+  @media all and (min-width: 1025px) {
+  
+    #wrap {
+      width: 84%;
+      max-width: 1280px;
+    }
+  
+  }
+   /*スマホ用*/
+ 
+/*タブレット用   600px以上〜*/
+@media all and (min-width: 600px) {
+  #imgSet li {
+    width: 33.3%;
+  }
+}
+ 
+/*コンピュータ用   1025px以上〜*/
+@media all and (min-width: 1025px) {
+ 
+}
+h1 {
+    font-size: 2rem;
+  }
+  
+  @media all and (min-width: 1025px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    #imgSet li {
+      width: 33.3%;
+    }
+  }
